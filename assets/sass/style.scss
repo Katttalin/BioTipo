@@ -1,0 +1,398 @@
+/* Cargar la tipografía personalizada */
+@font-face {
+     font-family: 'BioTipo';
+     src: url('../fonts/BioTipo-VF.ttf') format('truetype');
+     font-style: normal;
+     font-variation-settings: 'cntm' 100; // Valor inicial (regular)
+ }
+ 
+ /* Estilos generales */
+ body {
+     font-family: Inter, sans-serif;
+     font-weight: 500;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: left;
+     align-items: top;
+     height: 100vh;
+     background-color: #ffffff;
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+ }
+
+header {
+    color: #000000;
+    background-color: #ffffff;
+    border-bottom: 0.1rem solid #000000;
+    padding: 1rem 2rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.idHeader{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.logoHeader{
+    font-family: BioTipo;
+    font-size: 2.2rem;
+}
+
+.navHeader{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.navItem{
+    font-weight: 500;
+    color: #838383;
+}
+
+.navItemBlack{
+    font-weight: 500;
+    color: #000000;
+}
+
+.navItem:hover{
+    color: #000000;
+    cursor: pointer;
+}
+
+.titulo{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.uso{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 6rem 2rem 2rem 2rem;
+    align-items: center;
+}
+
+.show{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    margin: 8rem 2rem 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.titUso{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.flora{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.fauna{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.titExplicacion{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #838383;
+    text-align: center;
+}
+
+.floraContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.faunaContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.floraContainer1{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.floraContainer2{
+    display: flex;
+    flex-direction: column;
+}
+
+.ligaExp{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.fila1{
+    display: flex;
+    flex-direction: row;
+}
+
+.letterHolder{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem 0.4rem 1.5rem;
+    border: 0.15rem solid #ffffff;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+    width: 3.55rem;
+    align-items: center;
+}
+
+.letterHolder2{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem 0.4rem 1.5rem;
+    border: 0.15rem solid #ffffff;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+    width: 7rem;
+    align-items: center;
+}
+
+.letterHolder:hover{
+    border: 0.15rem solid #000000;
+    cursor: pointer;
+    .trueLetter{
+        color: #000000;
+    }
+}
+
+.letterHolder2:hover{
+    border: 0.15rem solid #000000;
+    cursor: pointer;
+    .trueLetter{
+        color: #000000;
+    }
+}
+
+.letterIcon{
+    font-family: BioTipo;
+    font-size: 5rem;
+}
+
+.trueLetter{
+    color: #fff;
+}
+ 
+.container {
+     display: flex;
+     flex-direction: column;
+     box-sizing: border-box;
+     gap: 1rem;
+     margin: 2rem 2rem 10rem 2rem;
+     padding-bottom: 10rem;
+     align-items: center;
+ }
+ 
+ /* Aplicar la tipografía al textarea */
+ #text-box {
+     width: 80%;
+     height: auto;
+     padding: 3vh;
+     box-sizing: border-box;
+     font-size: 15vw;
+     border: 0;
+     overflow: hidden;
+     border-radius: .5rem;
+     resize: none;
+     outline: none;
+     font-family: 'BioTipo', sans-serif;
+     font-variation-settings: 'cntm' 100;
+     text-align: center;
+ }
+
+ #text-box:focus {
+    border: 0.2rem solid #000000;
+}
+
+
+ .selector-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .selectorCiudad {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+  }
+  
+  #update-city {
+    padding: 0.4rem;
+    font-size: 1rem;
+    color: #838383;
+    border: 0.15rem solid #838383;
+    border-radius: 10rem;
+    cursor: pointer;
+  }
+  
+  #update-city:hover {
+    border: 0.15rem solid #000000;
+    color: #000000;
+  }
+  
+ 
+
+ /* Estilos para el botón */
+ #play-button {
+     padding: 1.5vh;
+     font-size: 3vh;
+     width: 3vh;
+     border: none;
+     border-radius: 10ch;
+     background-color: #838383;
+     color: #fff;
+     cursor: pointer;
+     transition: background-color 0.3s;
+     align-self: flex-end;
+ }
+ 
+ #play-button:hover {
+     background-color: #000000;
+ }
+
+ .Resumen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 6rem 0rem 0rem 0rem;
+    padding-bottom: 2rem;
+    hr{
+        border-bottom: solid 0.05rem #000000;
+        border-top: 0;
+        width: 50%;
+    }
+ }
+
+ .ResumenText{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    p{
+        width: 40rem;
+    }
+ }
+
+ .floraDet{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.liquensDet{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: start;
+}
+
+.liquenHolder{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    p{
+        width: 25rem;
+    }
+}
+
+.videoHolder{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 25rem;
+    height:25rem;
+    object-fit: contain;
+    position: relative;
+    img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 0.5s ease;
+    }
+}
+
+.img2{
+    opacity: 0;
+}
+
+.videoHolder:hover .img2 {
+    opacity: 1; /* Muestra la segunda imagen al hacer hover */
+}
+
+.videoHolder:hover .img1 {
+    opacity: 0; /* La primera imagen se oculta al hacer hover */
+}
+
+.muerte{
+    display: flex;
+   flex-direction: column;
+}
+
+.muerteExp{
+    font-family: BioTipo;
+    font-size: 10rem;
+    font-variation-settings: 'cntm' 100;
+}
+
+.muerteCont{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+    hr{
+        border-bottom: solid 0.05rem #000000;
+        border-top: 0;
+        width: 25%;
+    }
+    p{
+        width: 38rem;
+        text-align: center;
+        font-size: large;
+    }
+}
+ 
